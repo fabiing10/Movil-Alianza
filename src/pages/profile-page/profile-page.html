@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ 'page.profile' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page"  *ngIf="user">
+  <ion-card >
+    <img src="../../assets/images/bg_profile.jpg"/>
+    <div class="card-title">
+      <img src="../../assets/images/user.png" *ngIf= "user.imageProfile == 'none'" style="width: 20%;margin: 0 auto;">
+      <img src="{{user.imageProfile}}" *ngIf= "user.imageProfile != 'none'">
+    </div>
+    <div class="card-subtitle">
+      {{ user.name }}
+    </div>
+  </ion-card>
+  <ion-list>
+    <ion-item>
+      <ion-icon name="md-done-all" item-start></ion-icon>
+      {{ user.identification }}
+    </ion-item>
+    <ion-item>
+      <ion-icon name="ios-contact" item-start></ion-icon>
+      {{ user.name }} {{ user.lastName }}
+    </ion-item>
+    <ion-item>
+      <ion-icon name="ios-mail-outline" item-start></ion-icon>
+      {{ user.email }}
+    </ion-item>
+    <ion-item>
+      <ion-icon name="ios-call-outline" item-start></ion-icon>
+      {{ user.phone }}
+    </ion-item>
+    <ion-item>
+      <ion-icon name="ios-pin" item-start></ion-icon>
+      {{ user.city }}
+    </ion-item>
+  </ion-list>
+  <!--<ion-card>
+
+    <ion-row>
+      <ion-col col-25>{{ 'label.name' | translate }}:</ion-col>
+      <ion-col col-75>{{ user.name }}</ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-25>{{ 'label.email' | translate }}:</ion-col>
+      <ion-col col-75>{{ user.email }}</ion-col>
+    </ion-row>
+
+  </ion-card>-->
+
+
+</ion-content>

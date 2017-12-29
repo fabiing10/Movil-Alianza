@@ -1,0 +1,60 @@
+<!--
+  Generated template for the NetworkPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Usuarios Red</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="card-background-page"  >
+
+  <ion-card *ngIf="user">
+    <img src="../../assets/images/bg_profile.jpg"/>
+    <div class="card-title">
+      <img src="../../assets/images/user.png" *ngIf= "user.imageProfile == 'none'" style="width: 20%;margin: 0 auto;">
+      <img src="{{user.imageProfile}}" *ngIf= "user.imageProfile != 'none'">
+    </div>
+    <div class="card-subtitle">
+      {{ user.name }}
+    </div>
+  </ion-card>
+
+
+  <ion-list>
+  <ion-item *ngFor="let user of users" (click)="profileUser(user)">
+    <ion-avatar item-start>
+      <img src="../../assets/images/user.png" *ngIf= "user.imageProfile == 'none'">
+      <img src="{{user.imageProfile}}" *ngIf= "user.imageProfile != 'none'">
+    </ion-avatar>
+    <h2>{{user.name}} {{user.lastName}}</h2>
+    <p>{{user.email}}</p>
+  </ion-item>
+</ion-list>
+
+
+  <!--<ion-card>
+
+    <ion-row>
+      <ion-col col-25>{{ 'label.name' | translate }}:</ion-col>
+      <ion-col col-75>{{ user.name }}</ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-25>{{ 'label.email' | translate }}:</ion-col>
+      <ion-col col-75>{{ user.email }}</ion-col>
+    </ion-row>
+
+  </ion-card>-->
+
+
+</ion-content>
