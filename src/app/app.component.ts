@@ -28,11 +28,12 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      {title: 'page.profile', component: 'ProfilePage', icon: 'ios-contact'},
-      {title: 'page.network', component: 'NetworkPage', icon: 'ios-people'},
-      {title: 'page.properties', component: 'PropertiesPage', icon: 'ios-stats'},
+      {title: 'Perfil', component: 'ProfilePage', icon: 'md-contact'},
+      {title: 'Red APP', component: 'NetworkPage', icon: 'ios-people'},
+      {title: 'Inmuebles', component: 'PropertiesPage', icon: 'ios-stats'},
+      {title: 'Contactenos', component: 'ContactPage', icon: 'ios-stats'},
       //{title: 'page.books.list', component: 'BooksPage'},
-      {title: 'page.logout', component: 'LoginPage', icon: 'md-log-in', method: 'logout'}
+      {title: 'Salir', component: 'LoginPage', icon: 'md-log-in', method: 'logout'}
     ];
 
   }
@@ -48,11 +49,9 @@ export class MyApp {
   }
 
   openPage(page) {
-
     if (page.method && page.method === 'logout') {
       this.authService.logout();
     }
-
     this.nav.setRoot(page.component);
   }
 }

@@ -31,13 +31,13 @@
 
 
   <ion-list>
-  <ion-item *ngFor="let user of users" (click)="profileUser(user)">
+  <ion-item *ngFor="let u of users" (click)="profileUser(user)">
     <ion-avatar item-start>
-      <img src="../../assets/images/user.png" *ngIf= "user.imageProfile == 'none'">
-      <img src="{{user.imageProfile}}" *ngIf= "user.imageProfile != 'none'">
+      <img src="../../assets/images/user.png" *ngIf= "u.imageProfile == 'none'">
+      <img src="{{u.imageProfile}}" *ngIf= "u.imageProfile != 'none'">
     </ion-avatar>
-    <h2>{{user.name}} {{user.lastName}}</h2>
-    <p>{{user.email}}</p>
+    <h2>{{u.name}} {{u.lastName}}</h2>
+    <p>{{u.email}}</p>
   </ion-item>
 </ion-list>
 

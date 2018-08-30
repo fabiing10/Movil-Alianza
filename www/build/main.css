@@ -24758,10 +24758,6 @@ button.item {
   background: transparent;
 }
 
-.menu-inner, .ios .menu-inner {
-  background-image: url("../assets/images/bg_alianza_menu.jpg") !important;
-}
-
 .menu-inner .content-ios, .menu-inner .content {
   background-color: transparent;
 }

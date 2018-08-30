@@ -182,11 +182,7 @@ public startupTokenRefresh() {
 
     });
 
-
     }
-
-
-
 
 public unscheduleRefresh() {
 // Unsubscribe fromt the refresh

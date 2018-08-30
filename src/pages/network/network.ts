@@ -27,6 +27,8 @@ export class NetworkPage extends ProtectedPage {
     this.storage.get('user').then(user => {
       this.user = user;
     });
+
+
     this.generalService.getAllUsersNetwork().then(users => this.users = users);
 
 

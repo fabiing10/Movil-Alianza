@@ -7,5 +7,6 @@ export let cfg = {
     refresh:'/refresh',
   },
   books: '/books',
-  network: '/network'
+  network: '/network',
+  blogs: '/blogs'
 };

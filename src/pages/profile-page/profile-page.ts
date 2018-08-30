@@ -23,7 +23,7 @@ export class ProfilePage extends ProtectedPage {
 
 
     if(navParams.get('user') == undefined){
-      console.log("dentro de undefinded")
+
       this.storage.get('user').then(user => {
         this.user = user;
       });
