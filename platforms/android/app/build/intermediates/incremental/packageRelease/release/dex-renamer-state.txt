@@ -1,0 +1,4 @@
+#Fri Sep 07 09:40:46 COT 2018
+base.0=/Users/fabianzapata/Documents/Applications/Movil/Movil-Alianza/platforms/android/app/build/intermediates/transforms/dex/release/0
+renamed.0=classes.dex
+file.0=/Users/fabianzapata/Documents/Applications/Movil/Movil-Alianza/platforms/android/app/build/intermediates/transforms/dex/release/0/classes.dex

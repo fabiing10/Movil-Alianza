@@ -14,6 +14,37 @@
 
 </ion-header>
 
-<ion-content padding>
+<ion-content class="card-background-page">
 
+    <img src="../../assets/images/contacto_movil.jpg"/>
+
+
+
+
+
+
+  <form [formGroup]="contactData" (ngSubmit)="Submitcontact()">
+    <ion-item>
+      <ion-label color="primary" stacked>Nombre:</ion-label>
+      <ion-input type="text" formControlName="nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" stacked>Email</ion-label>
+      <ion-input type="text" formControlName="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" stacked>Telefono</ion-label>
+      <ion-input type="text" formControlName="telefono"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" stacked>Asunto</ion-label>
+      <ion-input type="text" formControlName="asunto"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" stacked>Mensaje</ion-label>
+      <ion-textarea type="text" formControlName="mensaje"></ion-textarea>
+    </ion-item>
+    <button margin-top ion-button type="submit">Enviar</button>
+  </form>
+  <img src="../../assets/images/footer_app.jpg" class="footer_app"/>
 </ion-content>

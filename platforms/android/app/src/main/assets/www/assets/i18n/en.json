@@ -1,0 +1,44 @@
+{
+  "label": {
+    "email": "Email address",
+    "password": "Password",
+    "name": "Name",
+    "username": "Usuario",
+    "password": "Clave",
+    "confirm_password" : "Confirm password",
+    "title" : "Title",
+    "author_name": "Author",
+    "pages": "Pages"
+  },
+  "button" : {
+    "login" : "Ingresar",
+    "register" : "Register",
+    "new_registration" : "New registration",
+    "forgotten_password" : "Forgotten password?",
+    "submit" : "Submit",
+    "add_book": "Add new book",
+    "edit": "Edit",
+    "delete": "Delete"
+  },
+  "page" : {
+    "login" : "Iniciar Sesion",
+    "logout" : "Salir",
+    "register" : "New registration",
+    "forgotten_password" : "Password recovery",
+    "profile" : "Perfil",
+    "network" : "Aliados APP",
+    "properties" : "Inmuebles",
+
+
+    "commissions" : {
+      "list" : "Comisiones",
+      "preview": "Detalles"
+    },
+    "books" : {
+      "list" : "My books",
+      "add": "Add book",
+      "edit" : "Edit book",
+      "preview": "Preview"
+    }
+  }
+}

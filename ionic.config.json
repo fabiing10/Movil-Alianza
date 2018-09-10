@@ -1,5 +1,7 @@
 {
   "name": "ionic3-seed-jwt",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

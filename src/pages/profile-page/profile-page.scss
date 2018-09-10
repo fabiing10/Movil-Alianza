@@ -1,10 +1,18 @@
+.card-background-page {
 
-  .card-background-page {
+    .image_profile{
+      margin-top: 40px;
+    }
+
+    ion-list.list.list-md {
+      padding: 0px !important;
+    }
 
     ion-card {
       position: relative;
       text-align: center;
     }
+    
     .card-title {
       position: absolute;
       top: 36%;
@@ -13,7 +21,7 @@
       font-weight: bold;
       color: #fff;
     }
-    
+
     .card-subtitle {
         font-size: 1.5em;
         position: absolute;

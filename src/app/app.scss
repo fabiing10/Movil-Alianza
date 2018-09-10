@@ -14,6 +14,7 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
 .logo-alianza{
   width: 50%;
   margin: 0 auto;
@@ -32,4 +33,73 @@ button.item{
 .menu-inner .content-ios, .menu-inner .content,{
 
     background-color: transparent;
+}
+.toolbar-background-md {
+  border-color: #071025;
+  background: #0d1935;
+  color: white;
+}
+.toolbar-title-md {
+    color: #ffffff;
+}
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+    color: #ffffff;
+    background-color: transparent;
+}
+.ios .menu-inner {
+    background: -moz-linear-gradient(top, #ffbb1c 0%, #f98500 100%);
+    background: -webkit-linear-gradient(top, #ffd400 0%,#f98500 100%);
+    background: linear-gradient(to bottom, #ffd400 0%,#f98500 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffbb1c', endColorstr='#f98500',GradientType=0 );
+}
+.android .menu-inner {
+    background: -moz-linear-gradient(top, #ffbb1c 0%, #f98500 100%);
+    background: -webkit-linear-gradient(top, #ffd400 0%,#f98500 100%);
+    background: linear-gradient(to bottom, #ffd400 0%,#f98500 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffbb1c', endColorstr='#f98500',GradientType=0 );
+}
+.menu-inner {
+  background-image: url('../assets/images/maxresdefault.jpg') !important;
+}
+
+
+.menu-inner .item-inner {
+    color: white;
+}
+
+.list-ios .item-block .item-inner {
+    border-bottom: 0px solid #c8c7cc;
+}
+
+ion-list.list.list-ios {
+    background: #09183e;
+    padding: 21px;
+}
+
+.toolbar-background-ios, .toolbar-background, .toolbar-background-android {
+    background: #09183e;
+    border: 0px;
+    color: white !important;
+}
+.toolbar-title-ios, .toolbar-title, .toolbar-title-android {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #fff;
+    pointer-events: auto;
+}
+.bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default {
+    color: #ffffff;
+    background-color: transparent;
+}
+.bar-button-default, .bar-button-default.bar-button-android-default, .bar-button-clear-android-default {
+    color: #ffffff;
+    background-color: transparent;
+}
+ion-list.list.list-md {
+    background: #fa7a02;
+    padding: 15px;
+}
+.item ion-icon.icon {
+    margin-right: 10px;
 }

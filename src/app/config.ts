@@ -1,5 +1,5 @@
 export let cfg = {
-  apiUrl: 'http://api.alianza/api',
+  apiUrl: 'http://api.alianzaparaelprogreso.co/api',
   tokenName: 'token',
   user: {
     register: '/auth/signup',

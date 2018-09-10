@@ -8,6 +8,7 @@
 </ion-header>
 
 <ion-content class="card-background-page"  *ngIf="user">
+  <img src="../../assets/images/contacto_movil.jpg" class="image_profile" />
   <ion-card >
     <img src="../../assets/images/bg_profile.jpg"/>
     <div class="card-title">
@@ -19,10 +20,6 @@
     </div>
   </ion-card>
   <ion-list>
-    <ion-item>
-      <ion-icon name="md-done-all" item-start></ion-icon>
-      {{ user.identification }}
-    </ion-item>
     <ion-item>
       <ion-icon name="ios-contact" item-start></ion-icon>
       {{ user.name }} {{ user.lastName }}
